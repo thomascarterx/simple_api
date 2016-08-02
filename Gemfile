@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
+# Authentication
+gem 'devise'
+
 # Serialize resources
 gem 'active_model_serializers'
 
@@ -28,6 +31,10 @@ group :development, :test do
   
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
 end
 
 group :development do
