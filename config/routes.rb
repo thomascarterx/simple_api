@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     scope module: :v1 do
       # Resources
-      resources :users, only: [:show, :create]
+      resources :users, only: [:show, :create, :update]
     end
   end
 end
