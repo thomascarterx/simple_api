@@ -1,5 +1,6 @@
 # require 'api_constraints'
 Rails.application.routes.draw do
+  devise_for :users
   # Api definition
   # 
   # To generate a base_uri under a subdomain, e.g. api.simple_api.dev,
